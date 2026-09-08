@@ -116,58 +116,58 @@ Values in the origin_date column must be a date in the format
 
 The origin_date is the start date for the scenario projections (initial time for the simulation). The origin_date and date in the filename should correspond. Please read the main README for a full list of accepted origin_date options.
 
-target
+## target
 The submission can contain multiple output_type information:
 
 
-•	A "mean" value and an optional set of quantiles for all targets. We will call this format "quantile" type output. For more information, please consult the quantile section.
+    •	A "mean" value and an optional set of quantiles for all targets. We will call this format "quantile" type output. For more information, please consult the quantile section.
 
 The requested targets are:
 
 
-•	`monthly case reports`
+    •	`monthly case reports`
 
 Optional target:
 
 
-•	`ADD OTHER OPTIONS`
+    •	`ADD OTHER OPTIONS`
 
 Values in the target column must be one of the following character strings:
 
 
-•	"rep"
+    •	"rep"
 
 
-•	ADD OTHER OPTIONS
+    •	ADD OTHER OPTIONS
     "rep"
 This target is the (monthly accumulated) number of reported cases during the month that is N (defined by the corresponding value in the horizon column) months after origin_date.
-horizon
+## horizon
 Values in the horizon column must be an integer (N) between 1 and 360 (30 years projections).
 
 Horizon value representing the associated target value during the N months after origin_date. Add a link to the main README.
-location
+## location
 Values in the location column must be one of the "locations ID" listed in the main README. (This could be NUTS-3-IDs) 
-output_type
+## output_type
 Values in the output_type column are either
 
 
-•	"mean" or
+    •	"mean" or
 
 
-•	"quantile" (optional)
-output_type_id
+    •	"quantile" (optional)
+## output_type_id
 mean
 If the corresponding output_type value (value on the same row) is mean then the value in the output_type_id column is NA.
 quantile
 If the corresponding output_type value (value on the same row) is quantile then the values in the quantile column are quantiles in the format
 
-0.###
+    0.###
 
 For quantile scenarios, this value indicates the quantile for the value in this row.
 
 Teams should provide the following 2 quantiles:
 
-0.025 0.975
+    0.025 0.975
 
 This means that if a team wants to submit quantiles there needs to be 1+2 rows for every origin_date``-``GCM-scenarioID-target+horizon-location group (combination)
 value

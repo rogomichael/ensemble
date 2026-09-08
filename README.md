@@ -86,6 +86,7 @@ The output file must contain eight columns (in any order):
 No additional columns are allowed. (WE MIGHT WANT TO ADD OPTIONAL COLUMNS)
 
 Each row in the file is a specific type for a coupled-model-scenario pair for a location on a particular date for a particular target.
+
     • `Column format`
     • `Column Name`:	Accepted Format
     •    `origin_date`:    character, date

@@ -76,25 +76,25 @@ The `team` and `model` in this file must match the `team` and `model` in the dir
 The output file must contain eight columns (in any order):
 
 
-    •    origin_date
+    •    `origin_date`
 
 
-    •	target
+    •	`target`
 
 
-    •	horizon
+    •	`horizon`
 
 
-    •	location
+    •	`location`
 
 
-    •	output_type
+    •	`output_type`
 
 
-    •	output_typeID
+    •	`output_typeID`
 
 
-    •	value
+    •	`value`
 
 No additional columns are allowed. (WE MIGHT WANT TO ADD OPTIONAL COLUMNS)
 

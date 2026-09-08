@@ -7,6 +7,11 @@ This page is intended to provide all contributors to the VBD-MODE near-future fo
 
 All projections should be submitted directly to the model-output/ folder. Data in this directory should be added to the repository  through a pull request.
 
+Each model that submits forecasts for this project will have a unique subdirectory within the [model-output/](model-output/) directory in this GitHub repository where forecasts will be submitted. Each subdirectory must be named
+
+    team-model
+
+where
 
 ### Subdirectory
 

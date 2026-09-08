@@ -68,7 +68,7 @@ where
 
 The date `YYYY-MM-DD` should correspond to the start date for the forecasting (Initial time of the simulations). Consult the main README for information regarding the expected start date options.  
 
-The `team` and `model` in this file must match the `team` and `model` in the directory this file is in. Both team and model should be less than 15 characters, alphanumeric and underscores only, with no spaces or hyphens.
+The `team` and `model` in this file must match the `team` and `model` in the directory this file is in. Both team and model should be less than 15 characters, alphanumeric and underscores only, with no spaces or hyphens. Submission of both targets- quantiles and samples must be in the same monthly csv submission file.
 
 
 ### Model results file format

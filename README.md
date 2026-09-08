@@ -17,9 +17,7 @@ where
 
 Each sub-directory within the model-output/ directory has the format:
 
-
-   team-model
-
+    team-model
 
 where
 

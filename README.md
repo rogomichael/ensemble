@@ -40,16 +40,16 @@ where
 - `Disease` is the target disease. Disease has to be one of the following options
 
 
-    o    TBE
+    •    TBE
 
 
-    o	Lyme
+    •	Lyme
 
 
-    o	WNF
+    •	WNF
 
 
-    o	Dengue
+    •	Dengue
 
 
  - `YYYY` is the 4 digit year,
@@ -76,39 +76,39 @@ The `team` and `model` in this file must match the `team` and `model` in the dir
 The output file must contain eight columns (in any order):
 
 
-•	origin_date
+    •    origin_date
 
 
-•	target
+    •	target
 
 
-•	horizon
+    •	horizon
 
 
-•	location
+    •	location
 
 
-•	output_type
+    •	output_type
 
 
-•	output_typeID
+    •	output_typeID
 
 
-•	value
+    •	value
 
 No additional columns are allowed. (WE MIGHT WANT TO ADD OPTIONAL COLUMNS)
 
 Each row in the file is a specific type for a coupled-model-scenario pair for a location on a particular date for a particular target.
-• `Column format`
-• `Column Name`:	Accepted Format
-•    `origin_date`:    character, date
-•    target:	character
-•    horizon:	numeric, integer
-•    location:	character
-•    output_type:	character
-•    output_type_id:	numeric, character, logical (NA)
-•    value:	numeric
-•    origin_date
+    • `Column format`
+    • `Column Name`:	Accepted Format
+    •    `origin_date`:    character, date
+    •    `target`:	character
+    •    `horizon`:	numeric, integer
+    •    `location`:	character
+    •    `output_type`:	character
+    •    `output_type_id`:	numeric, character, logical (NA)
+    •    `value`:	numeric
+    •    `origin_date`
 
 Values in the origin_date column must be a date in the format
 

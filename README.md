@@ -52,9 +52,6 @@ where
     o	Dengue
 
 
-    o	ADD MORE OPTIONS IF NEEDED
-
-
  - `YYYY` is the 4 digit year,
 
 

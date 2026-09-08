@@ -10,7 +10,9 @@ All projections should be submitted directly to the model-output/ folder. Data i
 ## Subdirectory
 Each sub-directory within the model-output/ directory has the format:
 
+
    team-model
+
 
 where
 

@@ -74,6 +74,7 @@ The `team` and `model` in this file must match the `team` and `model` in the dir
 ### Model results file format
 
 The output file must contain eight columns (in any order):
+
     •    `origin_date`
     •	`target`
     •	`horizon`

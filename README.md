@@ -1,4 +1,4 @@
-# ensemble
+# Ensemble Model Outputs Instructions
 This repository contains output files for VBD-MODE SP3 forecasting ensemble model outputs
 
 Data submission instructions
@@ -7,7 +7,7 @@ This page is intended to provide all contributors to the VBD-MODE near-future fo
 All projections should be submitted directly to the model-output/ folder. Data in this directory should be added to the repository  through a pull request.
 
 
-Subdirectory
+## Subdirectory
 Each sub-directory within the model-output/ directory has the format:
 
 team-model
@@ -23,13 +23,13 @@ where
 Both team and model should be less than 15 characters, and not include hyphens nor spaces.
 
 
-Metadata
+## Metadata
 Each submission team should have an associated metadata file. The file should be submitted with the first projection in the  model-metadata/ folder, in a file named: team-model.yml.
 
 For more information on the metadata file format, please consult the associated README in the model-metadata/ folder
 
 
-Model Results
+## Model Results
 Each model results file within the model-outputs/ subdirectory should follow naming convention:
 
 Disease-YYYY-MM-DD-team-model.csv

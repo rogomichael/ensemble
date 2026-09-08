@@ -19,7 +19,7 @@ where
 - `team` is the abbreviated team name and
 - `model` is the  abbreviated name of your model.
 
-Both *team* and *model* should be less than 15 characters, and not include hyphens nor spaces.
+Both **team** and **model** should be less than 15 characters, and not include hyphens nor spaces.
 
 
 ### Metadata

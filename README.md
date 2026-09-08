@@ -2,8 +2,8 @@
 
 This repository contains output files for VBD-MODE SP3 forecasting ensemble model outputs
 
-Data submission instructions
-This page is intended to provide all contributors to the VBD-MODE near-future forecasting (SP3) with all the information they need to submit projections.
+## Data submission instructions
+The intention is to provide all contributors to the VBD-MODE near-future forecasting (SP3) with all the information they need to submit projections.
 
 All projections should be submitted directly to the model-output/ folder. Data in this directory should be added to the repository  through a pull request.
 

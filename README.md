@@ -24,7 +24,7 @@ Both **team** and **model** should be less than 15 characters, and not include h
 
 ### Metadata
 
-Each submission team should have an associated metadata file. The file should be submitted with the first projection in the  model-metadata/ folder, in a file named: team-model.yml.
+Each submission team should have an associated **metadata** file. The file should be submitted with the first forecast in the  model-metadata/ folder, in a file named: team-model.yml.
 
 For more information on the metadata file format, please consult the associated README in the model-metadata/ folder
 
@@ -40,19 +40,19 @@ where
 - `Disease` is the target disease. Disease has to be one of the following options
 
 
-o	TBE
+    o    TBE
 
 
-o	Lyme
+    o	Lyme
 
 
-o	WNF
+    o	WNF
 
 
-o	Dengue
+    o	Dengue
 
 
-o	ADD MORE OPTIONS IF NEEDED
+    o	ADD MORE OPTIONS IF NEEDED
 
 
  - `YYYY` is the 4 digit year,
@@ -67,9 +67,9 @@ o	ADD MORE OPTIONS IF NEEDED
 - `team` is the team name, and
 
 
-•	model is the name of your model.
+- `model` is the name of your model.
 
-The date YYYY-MM-DD should correspond to the start date for the scenarios projection (Initial time of the simulations). Consult the main README for information regarding the expected start date options.  
+The date     YYYY-MM-DD     should correspond to the start date for the scenarios projection (Initial time of the simulations). Consult the main README for information regarding the expected start date options.  
 
 The team and model in this file must match the team and model in the directory this file is in. Both team and model should be less than 15 characters, alphanumeric and underscores only, with no spaces or hyphens.
 

@@ -7,12 +7,6 @@ This page is intended to provide all contributors to the VBD-MODE near-future fo
 
 All projections should be submitted directly to the model-output/ folder. Data in this directory should be added to the repository  through a pull request.
 
-Each model that submits forecasts for this project will have a unique subdirectory within the [model-output/](model-output/) directory in this GitHub repository where forecasts will be submitted. Each subdirectory must be named
-
-    team-model
-
-where
-
 ### Subdirectory
 
 Each sub-directory within the model-output/ directory has the format:
@@ -22,10 +16,8 @@ Each sub-directory within the model-output/ directory has the format:
 where
 
 
-•	team is the abbreviated team name and
-
-
-•	model is the  abbreviated name of your model.
+- `team` is the abbreviated team name and
+- `model` is the  abbreviated name of your model.
 
 Both team and model should be less than 15 characters, and not include hyphens nor spaces.
 
@@ -45,8 +37,7 @@ Disease-YYYY-MM-DD-team-model.csv
 
 where
 
-
-•	Disease is the target disease. Disease has to be one of the following options
+- `Disease` is the target disease. Disease has to be one of the following options
 
 
 o	TBE

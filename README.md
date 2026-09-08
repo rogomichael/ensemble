@@ -40,16 +40,16 @@ where
 - `Disease` is the target disease. Disease has to be one of the following options
 
 
-    •    TBE
+    -    TBE
 
 
-    •	Lyme
+    -	Lyme
 
 
-    •	WNF
+    -	WNF
 
 
-    •	Dengue
+    -	Dengue
 
 
  - `YYYY` is the 4 digit year,

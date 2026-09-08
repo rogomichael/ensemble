@@ -1,5 +1,5 @@
 # Ensemble Model Outputs Instructions
-
+https://github.com/CDCgov/rsv-forecast-hub/blob/main/model-output/README.md
 This repository contains output files for VBD-MODE SP3 forecasting ensemble model outputs
 
 ## Data submission instructions

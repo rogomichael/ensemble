@@ -19,7 +19,7 @@ where
 - `team` is the abbreviated team name and
 - `model` is the  abbreviated name of your model.
 
-Both team and model should be less than 15 characters, and not include hyphens nor spaces.
+Both *team* and *model* should be less than 15 characters, and not include hyphens nor spaces.
 
 
 ### Metadata
@@ -33,7 +33,7 @@ For more information on the metadata file format, please consult the associated 
 
 Each model results file within the model-outputs/ subdirectory should follow naming convention:
 
-Disease-YYYY-MM-DD-team-model.csv
+    Disease-YYYY-MM-DD-team-model.csv
 
 where
 
@@ -55,16 +55,16 @@ o	Dengue
 o	ADD MORE OPTIONS IF NEEDED
 
 
-•	YYYY is the 4 digit year,
+ - `YYYY` is the 4 digit year,
 
 
-•	MM is the 2 digit month,
+- `MM` is the 2 digit month,
 
 
-•	DD is the 2 digit day. Here DD should be set to 01, 
+- `DD` is the 2 digit day. Here DD should be set to 01, 
 
 
-•	team is the team name, and
+- `team` is the team name, and
 
 
 •	model is the name of your model.
@@ -75,6 +75,7 @@ The team and model in this file must match the team and model in the directory t
 
 
 ### Model results file format
+
 The output file must contain eight columns (in any order):
 
 

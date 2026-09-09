@@ -66,14 +66,17 @@ where
 
 - `model` is the name of your model.
 
-The date `YYYY-MM-DD` should correspond to the start date for the forecasting (Initial time of the simulations). Consult the main README for information regarding the expected start date options.  
+The date `YYYY-MM-DD` should correspond to the start date for the forecasting (Initial time of the simulations). Consult the main README for information regarding the expected start date options. 
+
+### TO DO (Set the start date based on agreed structure i.e ISO or otherwise). For example, submission from a team named exampleteam with a model named examplemodel for a reference date of September, 09, 2026 would be named:
+    `2026-09-09-exampleteam-examplemodel.csv`
 
 The `team` and `model` in this file must match the `team` and `model` in the directory this file is in. Both team and model should be less than 15 characters, alphanumeric and underscores only, with no spaces or hyphens. Submission of both targets- quantiles and samples must be in the same monthly csv submission file.
 
 
 ### Model results file format
 
-The output file must contain eight columns (in any order):
+The output file must be in a CSV file with the following columns (in any order):
 -   `reference_date`
 -   `origin_date`
 -   `target`
@@ -138,32 +141,58 @@ Values in the location column must be one of the "locations ID" listed in the ma
 Values in the output_type column are either
 
 
-    •	"mean" or
+    •    samples
+    •    "mean" or
+    •	"quantile" 
 
+### TOD DO: decide whether (Samples can either encode both temporal and spatial dependency across forecast horizons and locations or just encode temporal dependency across horizon but treats each location independently.)
 
-    •	"quantile" (optional)
 ## output_type_id
-mean
+Values in the output_type_id column specify identifying information for the output type.
+
 If the corresponding output_type value (value on the same row) is mean then the value in the output_type_id column is NA.
-quantile
-If the corresponding output_type value (value on the same row) is quantile then the values in the quantile column are quantiles in the format
+## quantile output
+When the predictions are quantiles, values in the output_type_id column are a quantile probability level in the format
 
     0.###
 
-For quantile scenarios, this value indicates the quantile for the value in this row.
+For quantile forecast, this value indicates the quantile for the value in this row.
 
 Teams should provide the following 2 quantiles:
 
     0.025 0.975
 
-This means that if a team wants to submit quantiles there needs to be 1+2 rows for every origin_date``-``GCM-scenarioID-target+horizon-location group (combination)
-value
-Values in the value column are non-negative numbers integer or with one decimal place indicating the "quantile" prediction for this row.
+### TO DO: Refine the sample output below 
 
-For a "quantile" prediction, value is the inverse of the cumulative distribution function (CDF) for the origin_date-GCM-scenarioID-target+horizon-location, and quantile associated with that row.
+## sample output
 
+When the predictions are samples, values in the output_type_id column are indexes for the samples. The output_type_id is used to indicate the dependence across multiple task id variables when samples come from a joint predictive distribution. For example, samples from a joint predictive distribution across horizons for a given location, will share output_type_id for predictions for different horizons within a same location, as shown in the table below:
 
-Model output validation
-To ensure proper data formatting, pull requests for new data or updates in model-output/ and model-metadata/ are validated before they are merged into the main branch of the VBD-MODE Scenario Projection HUB.
+| origin_date|horizon| location | output_type| output_type_id | value |
+|:---------- |:-----:|:-----:| :-------- | :------------ | :---- |
+| 2026-09-09 | -1      |  DE254 | sample | s0 | - |
+| 2026-09-09 |  0      |  DE254 | sample | s0 | - |
+| 2026-09-09 |  1      |  DE254 | sample | s0 | - |
+| 2026-09-09 | -1      |  DE110 | sample | s1 | - |
+| 2026-09-09 |  0      |  DE110 | sample | s1 | - |
+| 2026-09-09 |  1      |  DE110 | sample | s1 | - |
+| 2026-09-09 | -1      |  DE254 | sample | s2 | - |
+| 2026-09-09 |  0      |  DE254 | sample | s2 | - |
+| 2026-09-09 |  1      |  DE254 | sample | s2 | - |
+| 2026-09-09 | -1      |  DE110 | sample | s3 | - |
+| 2026-09-09 |  0      |  DE110 | sample | s3 | - |
+| 2026-09-09 |  1      |  DE110 | sample | s3 | - |
 
+## Forecast Validation
+
+To ensure proper data formatting, pull requests for new data in
+`model-output/` will be automatically run. Optionally, you may also run these validations locally.
+
+### Pull request forecast validation
+
+When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) which runs the tests present in [the vbd-modeValidations package](`create INHOUSE validations`). The intent for these tests are to validate the requirements above. Please [let us know](../../../issues) if you are facing issues while running the tests.
+
+### Local forecast validation
+
+Optionally, you may validate a forecast file locally before submitting it to the hub in a pull request. Note that this is not required, since the validations will also run on the pull request. To run the validations locally, follow the steps described [here](create a page on how to run local validations).
 
